@@ -1,0 +1,135 @@
+{
+    "projectId": "hycopTest",
+    "projectName": "hycopTest",
+    "collections" : [
+{
+    "$id": "hycop_users",
+    "$createdAt": 1662538795,
+    "$updatedAt": 1662541205,
+    "$read": [
+        "role:all"
+    ],
+    "$write": [
+        "role:all"
+    ],
+    "databaseId": "hycopTestDB",
+    "name": "hycop_users",
+    "enabled": true,
+    "permission": "collection",
+    "attributes": [
+        {
+            "key": "name",
+            "type": "string",
+            "status": "available",
+            "required": false,
+            "array": false,
+            "size": 255,
+            "default": null
+        },
+        {
+            "key": "email",
+            "type": "string",
+            "status": "available",
+            "required": false,
+            "array": false,
+            "size": 255,
+            "default": null
+        },
+        {
+            "key": "password",
+            "type": "string",
+            "status": "available",
+            "required": false,
+            "array": false,
+            "size": 255,
+            "default": null
+        },
+        {
+            "key": "userId",
+            "type": "string",
+            "status": "available",
+            "required": false,
+            "array": false,
+            "size": 255,
+            "default": null
+        },
+        {
+            "key": "accountSignUpType",
+            "type": "integer",
+            "status": "available",
+            "required": false,
+            "array": false,
+            "default": 1
+        },
+        {
+            "key": "phone",
+            "type": "string",
+            "status": "available",
+            "required": false,
+            "array": false,
+            "size": 255,
+            "default": null
+        },
+        {
+            "key": "imagefile",
+            "type": "string",
+            "status": "available",
+            "required": false,
+            "array": false,
+            "size": 255,
+            "default": null
+        },
+        {
+            "key": "userType",
+            "type": "string",
+            "status": "available",
+            "required": false,
+            "array": false,
+            "size": 255,
+            "default": null
+        },
+        {
+            "key": "userForeignKey",
+            "type": "string",
+            "status": "available",
+            "required": false,
+            "array": false,
+            "size": 255,
+            "default": null
+        },
+        {
+            "key": "isRemoved",
+            "type": "boolean",
+            "status": "available",
+            "required": false,
+            "array": false,
+            "default": false
+        }
+    ],
+    "indexes": [
+        {
+            "key": "email_index",
+            "type": "key",
+            "status": "available",
+            "attributes": [
+                "email"
+            ],
+            "orders": [
+                "ASC"
+            ]
+        },
+        {
+            "key": "userId_index",
+            "type": "key",
+            "status": "available",
+            "attributes": [
+                "userId"
+            ],
+            "orders": [
+                "ASC"
+            ]
+        }
+    ]
+}
+]
+}
