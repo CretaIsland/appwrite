@@ -58,10 +58,11 @@ module.exports = async function (req, res) {
   }
 
   if (!projectId || !databaseId || !apiKey || !endPoint ) {
-    projectId = "62d79f0b36f4029ce40f";
-    databaseId = "62d79f2e5fda513f4807";
-    apiKey = "163c3964999075adc6b7317f211855832ebb6d464520446280af0f8bbb9e642ffdcd2588a5141ce3ea0011c5780ce10986ed57b742fdb6a641e2ecf7310512cd5349e61385f856eb4789e718d750e2451c1b1519dd20cdf557b5edc1ae066e28430f5cc3e157abc4a13ad6aa112a48b07ce707341edfdc41d2572e95b4728905";
-    endPoint = "http://192.168.10.3/v1";
+	projectId = "hycopTest";
+	databaseId = "hycopTestDB";
+	apiKey = "a3d5ba69e4972a10ee68903c2a91f0fe349754849831613d5505d9ddfa1cb87ac9031588975ea6eca28c5afbceba18bc762f824dd0fdbe12c0b8c6c2b7fe61fd5ab8b8cac2d365f6c805116dafc06cd37e1a7e2cd03a898662ca20db7640b606eb7cd0ae806d433531b997a1d48babac24800fa8b0a1b93b81df6c68db8f01b8";
+	endPoint = "http://ec2-3-37-163-220.ap-northeast-2.compute.amazonaws.com:9090/v1";
+  
   }
   if(!usage)
   {
