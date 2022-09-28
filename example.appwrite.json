@@ -154,11 +154,11 @@
             ]
         },
         {
-            "$id": "creta_book",
+            "$id": "hycop_book",
             "$createdAt": 1663905392,
             "$updatedAt": 1663905392,
             "databaseId": "hycopTestDB",
-            "name": "creta_book",
+            "name": "hycop_book",
             "enabled": true,
             "attributes": [
                 {
@@ -377,11 +377,11 @@
             ]
         },
         {
-            "$id": "creta_delta",
+            "$id": "hycop_delta",
             "$createdAt": 1663905396,
             "$updatedAt": 1663905396,
             "databaseId": "hycopTestDB",
-            "name": "creta_delta",
+            "name": "hycop_delta",
             "enabled": true,
             "attributes": [
                 {
@@ -520,11 +520,11 @@
             ]
         },
         {
-            "$id": "creta_frame",
+            "$id": "hycop_frame",
             "$createdAt": 1663905405,
             "$updatedAt": 1663905405,
             "databaseId": "hycopTestDB",
-            "name": "creta_frame",
+            "name": "hycop_frame",
             "enabled": true,
             "attributes": [
                 {
@@ -864,20 +864,6 @@
     ],
     "functions": [
         {
-            "$id": "removeDelta",
-            "name": "removeDelta",
-            "runtime": "python-3.9",
-            "path": "functions/removeDelta",
-            "entrypoint": "src/index.py",
-            "ignore": [
-                "__pypackages__"
-            ],
-            "execute": [],
-            "events": [],
-            "schedule": "",
-            "timeout": 15
-        },
-        {
             "$id": "setDiskUsage",
             "name": "setDiskUsage",
             "runtime": "node-16.0",
@@ -897,6 +883,36 @@
             "name": "setDiskUsage_schedule",
             "runtime": "node-16.0",
             "path": "functions/setDiskUsage_schedule",
+            "entrypoint": "src/index.js",
+            "ignore": [
+                "node_modules",
+                ".npm"
+            ],
+            "execute": [],
+            "events": [],
+            "schedule": "",
+            "timeout": 15
+        },
+        {
+            "$id": "getDiskUsage",
+            "name": "getDiskUsage",
+            "runtime": "node-16.0",
+            "path": "functions/getDiskUsage",
+            "entrypoint": "src/index.js",
+            "ignore": [
+                "node_modules",
+                ".npm"
+            ],
+            "execute": [],
+            "events": [],
+            "schedule": "",
+            "timeout": 15
+        },
+        {
+            "$id": "removeDelta",
+            "name": "removeDelta",
+            "runtime": "node-16.0",
+            "path": "functions/removeDelta",
             "entrypoint": "src/index.js",
             "ignore": [
                 "node_modules",

@@ -95,7 +95,7 @@ module.exports = async function (req, res) {
   //let yesterdayStr = '2022-09-27 15:41:31.621';
 
   try {
-    var response = await database.listDocuments(databaseId, 'creta_delta', 
+    var response = await database.listDocuments(databaseId, 'hycop_delta', 
 	[
 		sdk.Query.lessThan('updateTime', yesterdayStr),
 		sdk.Query.orderAsc('updateTime')
@@ -105,7 +105,7 @@ module.exports = async function (req, res) {
     let documentList = response.documents;
     let deleted = 0;
     for(var i=0;i<total;i++) {
-      database.deleteDocument(databaseId, 'creta_delta', documentList[i].$id);
+      database.deleteDocument(databaseId, 'hycop_delta', documentList[i].$id);
       deleted = deleted + 1;
     }
     //let velog = JSON.parse(response);
