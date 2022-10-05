@@ -80,8 +80,8 @@ module.exports = async function (req, res) {
   if (!projectId || !databaseId || !apiKey || !endPoint ) {
   projectId = "hycopTest";
   databaseId = "hycopTestDB";
-  apiKey = "a3d5ba69e4972a10ee68903c2a91f0fe349754849831613d5505d9ddfa1cb87ac9031588975ea6eca28c5afbceba18bc762f824dd0fdbe12c0b8c6c2b7fe61fd5ab8b8cac2d365f6c805116dafc06cd37e1a7e2cd03a898662ca20db7640b606eb7cd0ae806d433531b997a1d48babac24800fa8b0a1b93b81df6c68db8f01b8";
-  endPoint = "http://ec2-3-37-163-220.ap-northeast-2.compute.amazonaws.com:9090/v1";
+  apiKey = "de04f1ce3c8e69e091b74bb8ebf1321484eb1c5bd384aaaa9ca201027d0e1dec64de67ae328fab89bc1ca341f0262d8679cd715b89955fed64304063a70d215eb79c33f2a19d290071e1fdc9682a09bfc49f602490974117a7853af2baad0a1a546c9dff999c62964440bdb4ceb0dcba131d4668d0b43dcf4b9c08e3aea949e0";
+  endPoint = "http://ec2-43-200-191-107.ap-northeast-2.compute.amazonaws.com:9090/v1";
   }
 
   client
